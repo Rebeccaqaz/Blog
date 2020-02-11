@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+{% block main %}
+<ol class="breadcrumb">
+    <li><a href="/">管理首页</a></li>
+    <li><span>内容添加</span></li>
+</ol>
+
+<h3>内容添加</h3>
+<!--submit action 才会实现页面跳转 到服务器端 处理对应的请求 ajax是不能跳转页面的 -两者url一致->-->
+<form  style="padding-left: 50px;margin-top:20px; " method="post" action="/admin/content/add">
+    <div style="display: inline-block">
+        <lable for="category">分  类：</lable>
+        <select  name="category" id="category" style="width: 200px;">
+            <!--这种for循环前面参数无所谓代表自己定义的数组元素 后边代表传递过来的数组名-->
+            {% for cate in categories %}
+            <option value="{{ cate._id.toString() }}">{{ cate.categoryname }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div>
+        <lable for="title">内容标题：</lable>
+        <input type="text" name="title" id="title" style="width: 200px;"/>
+    </div>
+    <div>
+        <lable for="desc">简  介：</lable>
+        <input type="text" name="desc" id="disc" style="width: 200px;"/>
+    </div>
+    <div>
+        <lable for="content">内  容：</lable>
+        <input type="text" name="content" id="content" style="width: 200px;"/>
+    </div>
+    <button type="submit">提交</button>
+</form>
+{% endblock %}

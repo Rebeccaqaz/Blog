@@ -1,0 +1,30 @@
+{% extends 'layout.html'%}
+{% block content %}
+{% for content in contents %}
+    <div class="content_box">
+        <h1>{{content.title}}</h1>
+        <p class="info">
+            作者：<span>{{ content.user.username }}</span>
+            -时间：<span>{{ content.addTime }}</span>
+            -阅读：<span>{{ content.views }}</span>
+            -评论：10 </p>
+        <p class="discription">{{ content.desc }}</p>
+        <div class="tips"></div>
+        <div class="readAll"><a href="/api?contentid={{content._id.toString()}}">阅读全文</a></div>
+    </div>
+{% endfor %}
+    <!--中间内容左边区域，中间区域左边结尾-->
+    <div class="pageInfo">
+        {% if page <= 1 %}
+        <p>没有上一页了</p>
+        {% else %}
+        <p><a href="?page={{page-1}}">上一页</a> </p>
+        {% endif %}
+        <p class="pageCenter">{{page}}/{{totalPage}}</p>
+        {% if page >= totalPage %}
+        <p class="textAlign">没有下一页</p>
+        {% else %}
+        <p class="textAlign"><a href="?page={{page+1}}">下一页</a> </p>
+        {% endif %}
+    </div>
+{% endblock %}

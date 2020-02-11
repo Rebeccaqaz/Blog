@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block main %}
+<ol class="breadcrumb">
+    <li><a href="/">管理首页</a></li>
+    <li><span>分类编辑-{{ category.categoryname }}</span></li>
+</ol>
+
+<form id="categoryForm" style="padding-left: 50px;margin-top:20px; " method="post" action="/admin/category/edit">
+    <div style="display: inline-block">
+        <lable for="name">分类名称：</lable>
+        <input type="text" name="categoryname" id="categoryname" value="{{ categoryname }}"/>
+    </div>
+    <div><input type="submit" value="提交" class="addCategory"/></div>
+</form>
+{% endblock %}

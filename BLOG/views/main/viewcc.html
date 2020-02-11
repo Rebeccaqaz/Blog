@@ -1,0 +1,26 @@
+{% extends 'layout.html'%}
+{% block content %}
+<div class="content_box">
+    <h1>{{content.title}}</h1>
+    <p class="info">
+        作者：<span>{{ content.user.username }}</span>
+        -时间：<span>{{ content.addTime }}</span>
+        -阅读：<span>{{ content.views }}</span>
+        -评论：10 </p>
+    <p class="discription">{{ content.desc }}</p>
+    <div style="text-align: left;margin-top: 10px;">
+        {{content.content}}
+    </div>
+
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

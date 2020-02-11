@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    color: #666560;
+    text-decoration: none;
+}
+a{
+    color: #666560;
+}
+a:hover{
+    color: orangered;
+}
+img{
+    border: none;
+    /*display: block;*/
+}
+.page{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    zoom:1;
+    height: 0;
+}

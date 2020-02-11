@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    width: 100%;
+    height: 310px;
+    border: 0px solid red;
+}
+
+.header .backImg{
+    width: 100%;
+    height: 264px;
+    background-image: url(/public/images/bg.jpg);
+    text-align: center;
+}
+
+.header .backImg img{
+    margin-top: 90px;
+}
+
+.header .nav{
+    width: 1200px;
+    height: 46px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 46px;
+    border: 0px solid blue;
+}
+.header .nav a{
+    color: black;
+    padding:13px 16px;
+}
+.header .nav a:hover{
+    border-bottom: 2px solid orange;
+}
+.lineOrange{
+    border-bottom: 2px solid orange;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    height: 950px;
+    padding: 40px 0;
+    background: lightgray;
+}
+
+.container .content{
+    width: 1200px;
+    height: 950px;
+    margin: 0 auto;
+    border: 0px solid red;
+}
+
+.container .content .content_l{
+    width: 800px;
+    height: 950px;
+    float: left;
+    border: 0px solid blue;
+}
+.container .content .content_l .content_box{
+    width: 720px;
+    height: 170px;
+    padding: 40px;
+    margin-bottom: 40px;
+    background: white;
+    border: 0px solid brown;
+}
+.container .content .content_l .content_box h1{
+    text-align: center;
+}
+.container .content .content_l .content_box .info{
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0;
+}
+.container .content .content_l .content_box .info span{
+    color: #46B9D8;
+}
+.container .content .content_l .content_box .description{
+    height: 42px;
+}
+.container .content .content_l .content_box .readAll{
+    color: white;
+    background: darkorange;
+    display: block;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.container .content .content_l .pageInfo{
+    width: 740px;
+    height: 80px;
+    background: white;
+    padding: 0 30px;
+}
+.container .content .content_l .pageInfo p{
+    float: left;
+    height: 80px;
+    width: 100px;
+    border: 0px solid red;
+    line-height: 80px;
+}
+.container .content .content_l .pageInfo .rightAlign{
+    float: right;
+    text-align: right;
+}
+.container .content .content_l .pageInfo .pageCenter{
+    text-align: center;
+    font-weight: bold;
+    margin: 0 220px;
+}
+.container .content .content_l .pageInfo p a{
+    color: black;
+}
+.hidden{
+    display: none;
+}
+.container .content .content_r{
+    width: 360px;
+    height: 950px;
+    float: right;
+    border: 0px solid blue;
+}
+
+.container .content .content_r .loginBox,
+.container .content .content_r .registerBox,
+.container .content .content_r .loginInfo{
+    width: 320px;
+    height: 230px;
+    padding: 20px;
+    background: white;
+}
+
+.container .content .content_r .loginBox .loginTitle,
+.container .content .content_r .registerBox .loginTitle,
+.container .content .content_r .loginInfo .loginTitle,
+.container .content .content_r .community .loginTitle{
+    width: 100%;
+    height: 50px;
+}
+
+.container .content .content_r .loginBox .loginTitle .loginText,
+.container .content .content_r .registerBox .loginTitle .loginText,
+.container .content .content_r .loginInfo .loginTitle .loginText,
+.container .content .content_r .community .loginTitle .loginText
+{
+    width: 70px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+}
+.container .content .content_r .loginInfo .loginTitle  .loginText{
+    width: 100px;
+    border-bottom: 1px solid orange;
+}
+.container .content .content_r .loginBox .loginTitle .font20,
+.container .content .content_r .registerBox .loginTitle .font20,
+.container .content .content_r .community .loginTitle .font20{
+    border-bottom: 1px solid orange;
+}
+
+.container .content .content_r .loginBox .loginTitle .loginLine,
+.container .content .content_r .registerBox .loginTitle .loginLine,
+.container .content .content_r .loginInfo .loginTitle .loginLine,
+.container .content .content_r .community .loginTitle .loginLine{
+    height: 50px;
+    width: 250px;
+    border-bottom: 1px solid lightgray;
+    float: left;
+}
+.container .content .content_r .loginInfo .loginTitle .loginLine{
+    width: 220px;
+}
+
+.container .content .content_r .loginBox .loginTitle .alignr,
+.container .content .content_r .registerBox .loginTitle .alignr{
+    text-align: right;
+    font-size: 14px;
+    color: gray;
+}
+
+.container .content .content_r .loginBox .loginTitle .input_box,
+.container .content .content_r .registerBox .loginTitle .input_box{
+    height: 40px;
+    width: 250px;
+    float: left;
+    padding-top: 10px;
+}
+.container .content .content_r .loginBox .loginTitle .input_box input,
+.container .content .content_r .registerBox .loginTitle .input_box input{
+    width: 220px;
+    height: 30px;
+
+}
+
+.container .content .content_r .loginBox .loginTitle .input_box .loginbtn,
+.container .content .content_r .registerBox .loginTitle .input_box .loginbtn{
+    background: orange;
+    border-radius: 5px;
+    width: 220px;
+    height: 30px;
+    color: white;
+    border: none;
+}
+
+.container .content .content_r .loginBox .alignr,
+.container .content .content_r .registerBox .alignr{
+    text-align: right;
+    font-size: 14px;
+    height: 20px;
+}
+.container .content .content_r .loginBox .alignr a,
+.container .content .content_r .registerBox .alignr a{
+    text-decoration: underline;
+    color: green;
+}
+.container .content .content_r .loginBox .tips,
+.container .content .content_r .registerBox .tips{
+    text-align: center;
+    color: coral;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.container .content .content_r .community{
+    width: 320px;
+    height: 140px;
+    padding: 20px;
+    margin-top: 40px;
+    background: white;
+}
+.container .content .content_r .community p,
+.container .content .content_r .loginInfo p{
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+}
+.container .content .content_r .loginInfo p.welcome{
+    color: red;
+}
+.container .content .content_r .community p a,
+.container .content .content_r .loginInfo p a{
+    text-decoration: underline;
+    color: red;
+}
+.container .content .content_r .loginInfo p a{
+    color: blue;
+}
+.font20{
+    font-size: 20px;
+}
+.footer{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    background: black;
+}
